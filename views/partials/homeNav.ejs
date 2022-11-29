@@ -1,0 +1,271 @@
+<div id="ec-overlay"><span class="loader_img"></span></div>
+
+<!-- Header start  -->
+<header class="ec-header">
+    <!--Ec Header Top Start -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col d-lg-none ">
+                    <div class="ec-header-bottons">
+                        <!-- Header User Start -->
+                        <div class="ec-header-user dropdown">
+                            <button class="dropdown-toggle" data-bs-toggle="dropdown"><img
+                                    src="assets/images/icons/user.svg" class="svg_img header_svg" alt="" /></button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a class="dropdown-item" href="signup">Register</a></li>
+                                <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                                <li><a class="dropdown-item" href="login">Login</a></li>
+                            </ul>
+                        </div>
+                        <!-- Header User End -->
+                        <!-- Header Cart Start -->
+                        <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
+                            <div class="header-icon"><img src="assets/images/icons/wishlist.svg"
+                                    class="svg_img header_svg" alt="" /></div>
+                            <span class="ec-header-count">4</span>
+                        </a>
+                        <!-- Header Cart End -->
+                        <!-- Header Cart Start -->
+                        <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
+                            <div class="header-icon"><img src="assets/images/icons/cart.svg" class="svg_img header_svg"
+                                    alt="" /></div>
+                            <span class="ec-header-count cart-count-lable">3</span>
+                        </a>
+                        <!-- Header Cart End -->
+                        <a href="javascript:void(0)" class="ec-header-btn ec-sidebar-toggle">
+                            <img src="assets/images/icons/category-icon.svg" class="svg_img header_svg" alt="icon" />
+                        </a>
+                        <!-- Header menu Start -->
+                        <a href="#ec-mobile-menu" class="ec-header-btn ec-side-toggle d-lg-none">
+                            <img src="assets/images/icons/menu.svg" class="svg_img header_svg" alt="icon" />
+                        </a>
+                        <!-- Header menu End -->
+                    </div>
+                </div>
+                <!-- Header Top responsive Action -->
+            </div>
+        </div>
+    </div>
+    <!-- Ec Header Top  End -->
+    <!-- Ec Header Bottom  Start -->
+    <div class="ec-header-bottom d-none d-lg-block">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="ec-flex">
+                    <!-- Ec Header Logo Start -->
+                    <div class="align-self-center">
+                        <div class="header-logo">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="Site Logo" /><img
+                                    class="dark-logo" src="assets/images/logo/dark-logo.png" alt="Site Logo"
+                                    style="display: none;" /></a>
+                        </div>
+                    </div>
+                    <!-- Ec Header Logo End -->
+
+                    <!-- Ec Header Search Start -->
+                    <div class="align-self-center">
+                        <div class="header-search">
+                            <form id="search" class="ec-btn-group-form" action="/search" method="post">
+                                <input id="searchProduct" name="search" class="form-control ec-search-bar" placeholder="Search products..."
+                                    type="search">
+                                <button class="submit" type="submit"><img src="assets/images/icons/search.svg"
+                                    class="svg_img header_svg" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- <form id="search" action="/search" method="post" class="search-bar">
+                        <input id="searchProduct" type="search" name="search" pattern=".*\S.*"
+                            required>
+                        <button class="search-btn" type="submit">
+                            <span>Search</span>
+                        </button>
+                    </form> -->
+                    <!-- Ec Header Search End -->
+
+                    <!-- Ec Header Button Start -->
+                    <div class="align-self-center">
+                        <div class="ec-header-bottons">
+                            <%var name,id%>
+                                <!-- Header User Start -->
+                                <div class="ec-header-user dropdown">
+                                    <%if (name){%>
+                                        <button class="dropdown-toggle" data-bs-toggle="dropdown"><img
+                                                src="assets/images/icons/user.svg" class="svg_img header_svg"
+                                                alt="" /><span style="color:#777777 ;"
+                                                class="d-flex align-items-center d-inline">Hello <%= name%></span>
+                                        </button>
+
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <!-- <li><a class="dropdown-item" href="signUp">signUp</a></li> -->
+                                            <li><a class="dropdown-item" href="userprofile?id=<%=id%>">User Profile</a></li>
+
+                                            <li><a class="dropdown-item" href="showcoupon">Your Coupons</a></li>
+
+                                            <li><a class="dropdown-item" href="logout">Logout</a></li>
+                                    </ul>
+                                            
+                                          
+
+                                        
+
+                                        <%}else {%>
+                                            <button class="dropdown-toggle" data-bs-toggle="dropdown"><img
+                                                    src="assets/images/icons/user.svg" class="svg_img header_svg"
+                                                    alt="" /></button>
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="dropdown-item" href="signUp">signUp</a></li>
+                                                <!-- <li><a class="dropdown-item" href="checkout.html">Checkout</a></li> -->
+                                                <li><a class="dropdown-item" href="login">Login</a></li>
+                                            </ul>
+                                            <%}%>
+                                </div>
+                                    <!-- Header User End -->
+                                    <!-- Header wishlist Start -->
+                                    <%if(cart != null){%>
+                                        <a href="wishlist" class="ec-header-btn ec-header-wishlist">
+                                            <div class="header-icon"><img src="assets/images/icons/wishlist.svg"
+                                                    class="svg_img header_svg" alt="" /></div>
+                                            <span class="ec-header-count">
+                                                <% let count %>
+                                                    <%= count %>
+                                            </span>
+                                        </a>
+
+                                        <!-- Header wishlist End -->
+                                        <!-- Header Cart Start -->
+                                        <!-- <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
+                                            <div class="header-icon"><img src="assets/images/icons/cart.svg"
+                                                    class="svg_img header_svg" alt="" /></div>
+                                            <span id="cart-count" class="ec-header-count cart-count-lable">
+                                                <%=cart.products.length%>
+                                            </span>
+
+                                        </a> -->
+                                        <a href="/cart"><img src="assets/images/icons/cart.svg"
+                                            class="svg_img header_svg" alt="" /><span style=" color: black; border-radius: 50%; width: 15px; height: 15px; background-size: 30px; border-color: antiquewhite;" id="cart-count" class="ec-header-count cart-count-lable">
+                                                <%=cart.products.length%>
+                                            </span>
+                                            
+                                        </a>
+                                        <!-- Header Cart End -->
+                                        <%}else{%>
+                                            <a href="wishlist" class="ec-header-btn ec-header-wishlist">
+                                                <div class="header-icon"><img src="assets/images/icons/wishlist.svg"
+                                                        class="svg_img header_svg" alt="" /></div>
+                                                <span class="ec-header-count">
+                                                    
+                                                </span>
+                                            </a>
+    
+                                            <!-- Header wishlist End -->
+                                            <!-- Header Cart Start -->
+                                            <!-- <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
+                                                <div class="header-icon"><img src="assets/images/icons/cart.svg"
+                                                        class="svg_img header_svg" alt="" /></div>
+                                                <span id="cart-count" class="ec-header-count cart-count-lable">
+                                                    
+                                                </span>
+    
+                                            </a> -->
+                                            <a href="/cart"><img src="assets/images/icons/cart.svg"
+                                                class="svg_img header_svg" alt="" /><span style=" color: black; border-radius: 50%; width: 15px; height: 15px; background-size: 30px; border-color: antiquewhite;" id="cart-count" class="ec-header-count cart-count-lable">
+                                                    
+                                                </span>
+                                                
+                                            </a>
+                                        <%}%>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ec Header Button End -->
+    <!-- Header responsive Bottom  Start -->
+    <div class="ec-header-bottom d-lg-none">
+        <div class="container position-relative">
+            <div class="row ">
+
+                <!-- Ec Header Logo Start -->
+                <div class="col">
+                    <div class="header-logo">
+                        <a href="index.html"><img src="assets/images/logo/logo.png" alt="Site Logo" /><img
+                                class="dark-logo" src="assets/images/logo/dark-logo.png" alt="Site Logo"
+                                style="display: none;" /></a>
+                    </div>
+                </div>
+                <!-- Ec Header Logo End -->
+                <!-- Ec Header Search Start -->
+                <div class="col">
+                    <div class="header-search">
+                        <form class="ec-btn-group-form" action="#">
+                            <input class="form-control ec-search-bar" placeholder="Search products..." type="text">
+                            <button class="submit" type="submit"><img src="assets/images/icons/search.svg"
+                                    class="svg_img header_svg" alt="icon" /></button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Ec Header Search End -->
+            </div>
+        </div>
+    </div>
+    <!-- Header responsive Bottom  End -->
+    <!-- EC Main Menu Start -->
+    <div id="ec-main-menu-desk" class="d-none d-lg-block sticky-nav">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-md-12 align-self-center">
+                    <div class="ec-main-menu">
+                        <a href="javascript:void(0)" class="ec-header-btn ec-sidebar-toggle">
+                            
+                        </a>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            
+                            <li class="dropdown"><a href="products">Products</a>
+                                <ul class="">
+
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="get-wishlist-items">Wishlist</a>
+
+                            </li>
+                            <% if (name){%>
+                                <li class="dropdown"><span class="main-label-note-new" data-toggle="tooltip"
+                                        title="NEW"></span><a href="Orders">Orders</a>
+                                    <ul class="">
+
+                                </li>
+                                <%}else{%>
+                                    <li class="dropdown"><span class="main-label-note-new" data-toggle="tooltip"
+                                            title="NEW"></span><a href="login">Login</a>
+                                        
+                                    </li>
+                                    <%}%>
+                        </ul>
+                        </li>
+                        <!-- <li class="dropdown"><a href="contactUs">Contact Us</a>
+
+                        </li> -->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ec Main Menu End -->
+    <script>
+        $("#search").submit(e => {
+            if ($("#searchProduct").val()) {
+                $("#search").submit()
+
+            }
+            else {
+                e.preventDefault();
+            }
+        })
+    </script>

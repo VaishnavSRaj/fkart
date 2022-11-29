@@ -1,0 +1,297 @@
+<!--========================================================= 
+    Item Name: Ekka - Ecommerce HTML Template.
+    Author: ashishmaraviya
+    Version: 3.2
+    Copyright 2021-2022
+	Author URI: https://themeforest.net/user/ashishmaraviya
+ ============================================================-->
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+     
+     <title>Ekka - Ecommerce HTML Template.</title>
+     <meta name="keywords" content="apparel, catalog, clean, ecommerce, ecommerce HTML, electronics, fashion, html eCommerce, html store, minimal, multipurpose, multipurpose ecommerce, online store, responsive ecommerce template, shops" />
+     <meta name="description" content="Best ecommerce html template for single and multi vendor store.">
+     <meta name="author" content="ashishmaraviya">
+     
+    <!-- site Favicon -->
+    <link rel="icon" href="assets/images/favicon/favicon.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="assets/images/favicon/favicon.png" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon/favicon.png" />
+
+    <!-- css Icon Font -->
+    <link rel="stylesheet" href="assets/css/vendor/ecicons.min.css" />
+
+    <!-- css All Plugins Files -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/countdownTimer.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/nouislider.css" />
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- Background css -->
+    <link rel="stylesheet" id="bg-switcher-css" href="assets/css/backgrounds/bg-4.css">
+
+    <style>
+      .odr{
+        text-align: center !important;
+      }
+    </style>
+    
+</head>
+<body class="cart_page">
+
+
+
+
+
+  <%- include('./partials/homeNav.ejs') %>
+
+    
+    
+
+
+
+
+
+        
+        <!-- ekka mobile Menu End -->
+    </header>
+    <!-- Header End  -->
+
+    <!-- ekka Cart Start -->
+    <div class="ec-side-cart-overlay"></div>
+    <div id="ec-side-cart" class="ec-side-cart">
+        <div class="ec-cart-inner">
+            <div class="ec-cart-top">
+                <div class="ec-cart-title">
+                    <span class="cart_title">My Cart</span>
+                    <button class="ec-close">×</button>
+                </div>
+                <ul class="eccart-pro-items">
+                    <li>
+                        <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
+                                src="assets/images/product-image/6_1.jpg" alt="product"></a>
+                        <div class="ec-pro-content">
+                            <a href="product-left-sidebar.html" class="cart_pro_title">T-shirt For Women</a>
+                            <span class="cart-price"><span>$76.00</span> x 1</span>
+                            <div class="qty-plus-minus">
+                                <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
+                            </div>
+                            <a href="javascript:void(0)" class="remove">×</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
+                                src="assets/images/product-image/12_1.jpg" alt="product"></a>
+                        <div class="ec-pro-content">
+                            <a href="product-left-sidebar.html" class="cart_pro_title">Women Leather Shoes</a>
+                            <span class="cart-price"><span>$64.00</span> x 1</span>
+                            <div class="qty-plus-minus">
+                                <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
+                            </div>
+                            <a href="javascript:void(0)" class="remove">×</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
+                                src="assets/images/product-image/3_1.jpg" alt="product"></a>
+                        <div class="ec-pro-content">
+                            <a href="product-left-sidebar.html" class="cart_pro_title">Girls Nylon Purse</a>
+                            <span class="cart-price"><span>$59.00</span> x 1</span>
+                            <div class="qty-plus-minus">
+                                <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
+                            </div>
+                            <a href="javascript:void(0)" class="remove">×</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="ec-cart-bottom">
+                <div class="cart-sub-total">
+                    <table class="table cart-table">
+                        <tbody>
+                            <tr>
+                                <td class="text-left">Sub-Total :</td>
+                                <td class="text-right">$300.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">VAT (20%) :</td>
+                                <td class="text-right">$60.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Total :</td>
+                                <td class="text-right primary-color">$360.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart_btn">
+                    <a href="cart.html" class="btn btn-primary">View Cart</a>
+                    <a href="checkout.html" class="btn btn-secondary">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ekka Cart End -->
+
+    <!-- Ec breadcrumb start -->
+    <div class="sticky-header-next-sec  ec-breadcrumb section-space-mb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row ec_breadcrumb_inner">
+                        <div class="col-md-6 col-sm-12">
+                            <h2 class="ec-breadcrumb-title">orders</h2>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <!-- ec-breadcrumb-list start -->
+                            <ul class="ec-breadcrumb-list">
+                                <li class="ec-breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="ec-breadcrumb-item active">Cart</li>
+                            </ul>
+                            <!-- ec-breadcrumb-list end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ec breadcrumb end -->
+
+    <!-- Ec cart page -->
+    <section class="ec-page-content section-space-p">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="ec-cart-leftside col-lg-12">
+                    <!-- cart content Start -->
+                    <div class="ec-cart-content">
+                        <div class="ec-cart-inner">
+                            <div class="row">
+                                <form action="#">
+                                    <div class="table-content cart-table-content">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th class="odr">Product</th>
+                                                    <th class="odr">Price</th>
+                                                    <th class="odr">Payment Method</th>
+                                                    <th style="text-align: center;">Quantity</th>
+                                                    <th class="odr">Order Status</th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <h1><%= prd[0].products[0].product.Name%></h1>
+                                                <% for(var y=0;y<prd.length;y++){ %> 
+                                                <% for(var i=0;i<prd[y].products.length;i++){ %> 
+                                                <tr>
+                                                    <td data-label="Product" class="ec-cart-pro-name"><a
+                                                      class="d-flex justify-content-center"
+                                                            href="product-left-sidebar.html"><img class="ec-cart-pro-img mr-5 d-flex justify-content-center"
+                                                                src="assets/images/product-image/1.jpg"
+                                                                alt="" /><% %></a></td>
+                                                    <td data-label="Price" class="ec-cart-pro-price"><span
+                                                            class="amount d-flex justify-content-center">₹<%=prd[y].products[i].product.newPrice%> </span></td>
+                                                    <td data-label="Quantity" class="ec-cart-pro-qty"
+                                                        style="text-align: center;">
+                                                        <span
+                                                            class="a<%=prd[y].products[i].product.status%>mount d-flex justify-content-center"></span>
+                                                    </td>
+                                                    <td data-label="Quantity" class="ec-cart-pro-qty"
+                                                        style="text-align: center;">
+                                                        <span
+                                                            class="amount d-flex justify-content-center"><%=prd[y].status%> </span>
+
+
+                                                            <td data-label="Quantity" class="ec-cart-pro-qty"
+                                                        style="text-align: center;">
+                                                        <span
+                                                            class="amount d-flex justify-content-center">
+                                                        <a href="/cancelOrder?id=<%=prd[y]._id%>"><button type="button" class="btn btn-primary">Cancel Order</button></a></span>
+                                                            
+                                                            
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                            <% } %> 
+                                            <% } %> 
+                                               
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <!-- <div class="ec-cart-update-bottom">
+                                                <a href="#">Continue Shopping</a>
+                                                <button class="btn btn-primary">Check Out</button>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--cart content End -->
+                </div>
+                <!-- Sidebar Area Start -->
+                
+                        <!-- Sidebar Summary Block -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- New Product Start -->
+    
+    </section>
+    <!-- New Product end -->
+
+    <!-- Footer Start -->
+    <%- include('./partials/footer.ejs') %>
+    <!-- Feature tools end -->
+
+    <!-- Vendor JS -->
+    <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+	<script src="assets/js/vendor/jquery.notify.min.js"></script>
+	<script src="assets/js/vendor/jquery.bundle.notify.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+
+    <!--Plugins JS-->
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/countdownTimer.min.js"></script>
+    <script src="assets/js/plugins/scrollup.js"></script>
+    <script src="assets/js/plugins/jquery.zoom.min.js"></script>
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/infiniteslidev2.js"></script>
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/jquery.sticky-sidebar.js"></script>
+    <!-- Google translate Js -->
+    <script src="assets/js/vendor/google-translate.js"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+    <!-- Main Js -->
+    <script src="assets/js/vendor/index.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
